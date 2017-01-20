@@ -1,0 +1,246 @@
+1.Create a file.
+
+package project1;
+import java.io.File;
+import java.io.IOException;
+
+public class createfile
+{
+	
+	public static void main(String[] args) 
+	{
+	try 
+         {
+          File file = new File("D:/Javaprogram.txt");
+	  if (!file.exists()) 
+            {
+	     file.createNewFile();
+	}
+
+	}  
+        catch (IOException e) 
+         {
+	  e.printStackTrace();
+	}
+	}
+	}
+=========================================================================================
+
+2.Read a file.
+
+package project1;
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+public class ReadFromFile
+ {
+
+	public static void main(String a[])
+{
+	BufferedReader br = null;
+	String strLine = "";
+	try
+          {
+
+	   br = new BufferedReader( new FileReader("D:/Javaprogram.txt"));
+	   while( (strLine = br.readLine()) != null)
+          {
+	
+	   System.out.println(strLine);
+	}
+	} 
+catch (FileNotFoundException e) 
+      {
+	System.err.println("Unable to find the file");
+	} 
+catch (IOException e) 
+       {
+	System.err.println("Unable to read the file");
+	}
+	}
+	}
+==============================================================================
+
+3.Write a file.
+
+package project1;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class writeToFile 
+{
+	public static void main(String[] args) 
+        {
+	try 
+           {
+	    String content = "Hello JavaSeleniumWorld.com"; 
+	    File file = new File("D:/Javaprogram.txt");
+
+	if (!file.exists()) 
+        {
+	file.createNewFile();
+	}
+	FileWriter fw = new FileWriter(file.getAbsoluteFile());
+	BufferedWriter bw = new BufferedWriter(fw);
+	bw.write(content);
+	bw.close();
+
+
+	} 
+catch (IOException e) 
+       {
+	e.printStackTrace();
+	}
+	}
+	}
+
+========================================================================================
+
+4. Delete a file.
+
+package project1;
+import java.io.File;
+public class DeleteFile 
+{
+	
+	public static void main(String[] args)
+	{
+	try{
+
+	File file = new File("D:/hello.class");
+
+	if(file.delete())
+        {
+	System.out.println(file.getName() + " is deleted!");
+	}else{
+	System.out.println("Delete operation is failed.");
+	}
+
+	}catch(Exception e){ 
+	e.printStackTrace(); 
+	}
+	}
+	}
+=====================================================================================
+
+5. List all filename in a folder.
+
+package project1;
+import java.io.File;
+
+public class listFile 
+{
+	public static void main(String a[])
+        {
+	File file = new File("D:/Javaselenium");
+	File[] files = file.listFiles();
+	for(File f: files)
+{
+	System.out.println(f.getName());
+	}
+	}
+	}
+========================================================================================
+
+6. List filename with specific extension.
+
+package project1;
+import java.io.File;
+public class Listfileswithspecificextension 
+{
+	public static void main(String a[])
+{
+	File file = new File("D:/Javaselenium");
+	File[] files = file.listFiles();
+	for(File f: files)
+         {
+	  if(f.getName().toLowerCase().endsWith(".txt"))
+          {
+	
+	System.out.println(f.getName());
+	}
+	}
+	}
+	}
+
+======================================================================================
+
+7. Create a folder.
+
+package project1;
+import java.io.File;
+
+public class createFolder 
+{
+	public static void main(String[] args) 
+{
+	File file = new File("D:/ravi");
+	if (!file.exists()) 
+          {
+	   if (file.mkdir()) 
+             {
+	System.out.println("Directory is created!");
+	} 
+      else 
+        {
+	System.out.println("Failed to create directory!");
+	}
+	}
+	}
+	}
+=====================================================================================
+
+8. Delete a folder.
+
+package project1;
+import java.io.File;
+
+public class deleteafolder
+ {
+
+	public static void main(String[] args)
+{
+	File filez = new File("D:/ravi");
+	deleteFolder(filez);
+	}
+
+	public static void deleteFolder(File folder) 
+{
+	File[] files = folder.listFiles();
+	if(files!=null) 
+{ 
+	for(File f: files) 
+{
+	if(f.isDirectory()) 
+{
+	deleteFolder(f);
+	} else {
+	f.delete();
+	}
+	}
+	}
+	folder.delete();
+	}
+	}
+======================================================================================
+
+9. Move a file one folder to another.
+
+package project1;
+import java.io.File;
+public class MoveFiletoanotherDirectory 
+{
+	public static void main(String[] args)
+{
+	File from = new File("D:/Javaselenium.txt");
+	File to = new File("D:/New java.txt");
+	if (from.renameTo(to))
+	System.out.println("Successfully Moved the file");
+	else
+	System.out.println("Error while moving the file");
+	}
+	}
+	
