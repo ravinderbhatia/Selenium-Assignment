@@ -1,0 +1,91 @@
+Assignment-1
+Introduction to Automation
+
+1. What is the difference between Manual Testing and Automation Testing?
+2. What is Automation?
+3. Why to Automate a Project?
+4. What are the advantages of Automation?
+5. Name few test Automation Tools
+6. What are the benefits of Automation?
+7. What is the need of Automation?
+8. What is Framework?
+9. What are the types of frameworks?
+10. What is Keyword driven and Code Driven automation testing?
+
+
+
+
+Qus1:- What is the difference between Manual Testing and Automation Testing?
+
+Ans:- 
+Automation Testing
+Manual Testing
+Automation testing perform the same operation each time
+Manual testing is not reliable. Using this method test execution is not accurate all the time.
+Automation testing is very much helpful regressions in testing where code changes frequently.
+To execute the test cases first time using manual testing will be very much useful. But it is not sure that it will catch the regression defects under frequently changing requirements.
+Automation testing will be useful to execute the set of test cases frequently.
+Manual testing will be useful when the test case only needs to run once or twice.
+After making Automation test suites, fewer testers required to execute the test cases.
+To execute the test cases every time tester requires the same amount of time.
+Automation testing can also be done on different machine with different OS platform combination, concurrently.
+Using manual testing,testing on different machine with different OS platform combination is not possible, concurrently. To execute such task different testers are required.
+Using Automation testing, testers can test complicated application too.
+It does not involve in programming task to fetch hidden information.
+Automation runs test cases significantly faster than human resources.
+Manual testing is slower than automation. Running tests manually can be very time consuming.
+Some time it is not helpful in UI testing
+It is very much helpful in UI testing
+Automation testing is very useful for automating the Build Verification Testing (BVT) & it is not mundane and tiresome.
+To execute the Build Verification Testing (BVT) is very mundane and tiresome in manual testing.
+Initial cost of automation testing is more than manual testing but useful always.
+Manual testing requires less cost than automation.
+
+Qus2:- What is Automation?
+Ans:- The dictionary defines automation as “the technique of making an apparatus, a process, or a system operate automatically.” We define automation as "the creation and application of technology to monitor and control the production and delivery of products and services.” 
+Qus3:- Why to Automate a project?
+Ans:-     Regression test after debugging or further development of software
+Testing of software on different platforms or with different configurations
+Data-driven testing (creation of tests using the same actions but with many different inputs)
+Qus4:- What are the advantages of Automation?
+Ans:-	
+Repeatable: Testers can test how the website or software reacts after repeated execution of the same operation.
+Reusable: Tests can be re-used on different versions of the software.
+Reliable: Tests perform precisely the same operation each time they are run thereby eliminating human error.
+Comprehensive: Testers can build test suites of tests that covers every feature in software software application.
+Programmable: Testers can program sophisticated tests that bring hidden information.
+
+Qus 5:- Name few test Automation Tools?
+Ans:-      
+ Selenium
+QTP(UFT)
+Testdrive
+
+Qus6:- What is the need of Automation?
+Ans:- Automation testing will help to automate some repetitive tasks, resulting in faster execution with better test coverage or outcomes. ... These days as software testing is moving towards automation, most of the software testers as well as QAs are switching themselves from Manual testing to Automated testing 
+
+Qus7:- What is  the type of Framework?
+Ans:- 
+Library Architecture Testing Framework
+Data Driven Testing Framework
+Keyword Driven Testing Framework
+Hybrid Testing Framework
+Behavior Driven Development Framework
+Module Based Testing Framework
+
+Qus8:-What is framework?
+Ans:- Framework approach in automation. A test automation framework is an integrated system that sets the rules of automation of a specific product. This system integrates the function libraries, test data sources, object details and various reusable modules. 
+
+Qus9:-What is Keyword driven and Code Driven automation testing?
+Ans:- 
+1. keyword driven automation testing:-A keyword-driven framework is a table-driven testing or action word based testing. It is a software testing method suitable for both manual and automated testing.
+2. Code driven automation testing:-Code driven test automation is a key feature of Agile software development, where it is known as Test-driven development (TDD). Unit tests are written to define the functionality before the code is written. 
+
+
+
+
+
+
+	
+
+
